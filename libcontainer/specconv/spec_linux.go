@@ -94,6 +94,14 @@ var AllowedDevices = []*configs.Device{
 	},
 	{
 		Type:        'c',
+		Path:        "/dev/kvm",
+		Major:       10,
+		Minor:       232,
+		Permissions: "rwm",
+		Allow:       true,
+	},
+	{
+		Type:        'c',
 		Path:        "/dev/zero",
 		Major:       1,
 		Minor:       5,

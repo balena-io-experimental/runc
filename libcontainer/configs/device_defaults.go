@@ -42,6 +42,16 @@ var (
 			FileMode:    0666,
 		},
 
+		// kvm
+		{
+			Path:        "/dev/kvm",
+			Type:        'c',
+			Major:       10,
+			Minor:       232,
+			Permissions: "rwm",
+			FileMode:    0666,
+		},
+
 		// /dev/urandom,/dev/random
 		{
 			Path:        "/dev/urandom",
